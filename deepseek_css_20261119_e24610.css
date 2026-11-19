@@ -1,0 +1,513 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Poppins', 'Microsoft JhengHei', 'Noto Sans HK', sans-serif;
+  background: #fff9f0;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+/* 導覽列 */
+.navbar {
+  background: white;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+  padding: 0.8rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff6b9d;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff6b9d;
+  border-bottom-color: #ffb6c1;
+}
+
+/* 首頁輪播 */
+.hero {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.carousel-container {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(255, 107, 157, 0.2);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+/* SVG 輪播容器 */
+.svg-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-slide svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #ff6b9d;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #ff6b9d;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-btn:hover {
+  background: #ffb6c1;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.dot.active {
+  background: #ff6b9d;
+  transform: scale(1.3);
+  border-color: white;
+}
+
+/* 青春標語 */
+.tagline {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #fff0f5, #ffe4e9);
+  border-radius: 50px 50px 30px 30px;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.tagline h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #4a2c3a;
+}
+
+.tagline .highlight {
+  color: #ff6b9d;
+  display: inline-block;
+  background: #fff0f5;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+.tagline p {
+  font-size: 1.3rem;
+  margin: 1.2rem 0 2rem;
+  color: #6b4e5a;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ff6b9d;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #c94f7c;
+}
+
+.cta-button:hover {
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #c94f7c;
+  background: #ff85b3;
+}
+
+/* 產品頁 */
+.products-main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #ff6b9d;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7a5a66;
+  margin-bottom: 3rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 30px;
+  padding: 1.5rem 1.5rem 2rem;
+  box-shadow: 0 15px 25px rgba(255, 182, 193, 0.2);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+}
+
+/* 產品圖片：SVG 彩色樣品 */
+.product-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 20px rgba(255, 107, 157, 0.25);
+  border: 4px solid white;
+  transition: all 0.3s;
+  background: white;
+}
+
+.product-img svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.product-card:hover .product-img svg {
+  transform: scale(1.08);
+}
+
+.product-card h3 {
+  font-size: 1.7rem;
+  color: #3d2a33;
+  margin-bottom: 0.4rem;
+}
+
+.product-card p {
+  color: #886e7a;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: inline-block;
+  background: #ffe4e9;
+  padding: 0.4rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #ff6b9d;
+  font-size: 1.2rem;
+}
+
+/* 產品特色 */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  background: #fff3f5;
+  padding: 3rem 2rem;
+  border-radius: 60px;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.feature-item i {
+  font-size: 2.8rem;
+  color: #ff6b9d;
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 8px 0 #ffcdd9;
+  margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #4a2c3a;
+}
+
+/* 聯絡頁 */
+.contact-main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: white;
+  border-radius: 50px;
+  padding: 3rem;
+  box-shadow: 0 20px 30px rgba(255, 182, 193, 0.2);
+}
+
+.contact-info {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.15rem;
+  background: #fff4f7;
+  padding: 1rem 1.5rem;
+  border-radius: 40px;
+}
+
+.info-item i {
+  width: 35px;
+  height: 35px;
+  background: #ff6b9d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.contact-doodle {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #ff6b9d;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  flex: 2 1 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #4a2c3a;
+  font-size: 1.1rem;
+}
+
+.form-group label i {
+  color: #ff6b9d;
+  margin-right: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 1rem 1.2rem;
+  border: 2px solid #ffe0e6;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: border 0.3s;
+  background: #fefafb;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff6b9d;
+  box-shadow: 0 0 0 4px rgba(255, 107, 157, 0.1);
+}
+
+.submit-btn {
+  width: fit-content;
+  padding: 0.9rem 3rem;
+}
+
+/* 頁尾 */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #a08793;
+  background: #fff0f2;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  border-top: 2px dashed #ffcdd9;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+  .carousel {
+    height: 280px;
+  }
+  .slide-caption {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    bottom: 15px;
+    left: 15px;
+  }
+  .tagline h1 {
+    font-size: 2.2rem;
+  }
+  .page-title {
+    font-size: 2.2rem;
+  }
+  .contact-wrapper {
+    padding: 2rem 1.5rem;
+  }
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+  .product-img {
+    height: 170px;
+  }
+}

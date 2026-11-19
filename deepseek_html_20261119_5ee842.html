@@ -1,0 +1,206 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【青春果漾】| 產品介紹</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">青春果漾<span>🍓</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="products.html" class="active">產品介紹</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="products-main">
+    <h1 class="page-title">🌈 青春果漾系列</h1>
+    <p class="page-subtitle">四款人氣飲品，多重驚喜，快啲嚟收集你嘅青春色彩！</p>
+
+    <!-- 產品卡片網格 -->
+    <div class="products-grid">
+      <!-- 草莓青春飲 -->
+      <div class="product-card">
+        <div class="product-img">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pStrawberry" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ff4d6d"/>
+                <stop offset="100%" stop-color="#c9184a"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="20" fill="#ffd1dc"/>
+            <!-- 杯子 -->
+            <rect x="100" y="50" width="100" height="120" rx="15" fill="rgba(255,255,255,0.5)" stroke="#ffb3c1" stroke-width="2"/>
+            <rect x="105" y="90" width="90" height="75" rx="12" fill="url(#pStrawberry)"/>
+            <!-- 草莓切片 -->
+            <g transform="translate(125, 100) rotate(-15) scale(0.7)">
+              <path d="M0,0 Q30,-20 60,0 Q30,40 0,0 Z" fill="#ff4d6d" stroke="#c9184a" stroke-width="2"/>
+              <circle cx="15" cy="5" r="3" fill="#ffe066"/>
+              <circle cx="30" cy="10" r="3" fill="#ffe066"/>
+              <circle cx="45" cy="5" r="3" fill="#ffe066"/>
+            </g>
+            <g transform="translate(165, 130) rotate(20) scale(0.5)">
+              <path d="M0,0 Q30,-20 60,0 Q30,40 0,0 Z" fill="#ff4d6d" stroke="#c9184a" stroke-width="2"/>
+              <circle cx="15" cy="5" r="3" fill="#ffe066"/>
+              <circle cx="30" cy="10" r="3" fill="#ffe066"/>
+            </g>
+            <!-- 冰塊 -->
+            <rect x="115" y="95" width="22" height="22" rx="4" fill="rgba(255,255,255,0.6)" transform="rotate(10, 126, 106)"/>
+            <rect x="160" y="115" width="18" height="18" rx="4" fill="rgba(255,255,255,0.5)" transform="rotate(-8, 169, 124)"/>
+            <!-- 吸管 -->
+            <rect x="180" y="40" width="8" height="80" rx="4" fill="#ffb3c1" stroke="#ff6b9d" stroke-width="1"/>
+            <text x="150" y="190" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="bold" fill="#c9184a">🍓 草莓青春飲</text>
+          </svg>
+        </div>
+        <h3>草莓青春飲</h3>
+        <p>初戀般嘅甜蜜滋味，少女感滿分</p>
+        <span class="price">HK$ 15</span>
+      </div>
+
+      <!-- 芒果活力飲 -->
+      <div class="product-card">
+        <div class="product-img">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pMango" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffb347"/>
+                <stop offset="100%" stop-color="#ff8c00"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="20" fill="#ffe5b4"/>
+            <rect x="100" y="50" width="100" height="120" rx="15" fill="rgba(255,255,255,0.5)" stroke="#ffcc80" stroke-width="2"/>
+            <rect x="105" y="90" width="90" height="75" rx="12" fill="url(#pMango)"/>
+            <!-- 芒果切片 -->
+            <g transform="translate(120, 95) rotate(-25) scale(0.6)">
+              <path d="M0,0 Q20,-30 50,-10 Q60,20 30,40 Q0,50 0,0 Z" fill="#ffb347" stroke="#e67e22" stroke-width="2"/>
+              <path d="M5,5 Q20,-15 40,-5" stroke="#ffe066" stroke-width="2" fill="none"/>
+            </g>
+            <g transform="translate(165, 135) rotate(30) scale(0.45)">
+              <path d="M0,0 Q20,-30 50,-10 Q60,20 30,40 Q0,50 0,0 Z" fill="#ffb347" stroke="#e67e22" stroke-width="2"/>
+              <path d="M5,5 Q20,-15 40,-5" stroke="#ffe066" stroke-width="2" fill="none"/>
+            </g>
+            <rect x="115" y="95" width="22" height="22" rx="4" fill="rgba(255,255,255,0.6)" transform="rotate(-5, 126, 106)"/>
+            <rect x="155" y="115" width="18" height="18" rx="4" fill="rgba(255,255,255,0.5)" transform="rotate(10, 164, 124)"/>
+            <rect x="180" y="40" width="8" height="80" rx="4" fill="#ffcc80" stroke="#e67e22" stroke-width="1"/>
+            <text x="150" y="190" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="bold" fill="#e67e22">🥭 芒果活力飲</text>
+          </svg>
+        </div>
+        <h3>芒果活力飲</h3>
+        <p>熱情果香，瞬間補充元氣</p>
+        <span class="price">HK$ 14</span>
+      </div>
+
+      <!-- 藍莓優格飲 -->
+      <div class="product-card">
+        <div class="product-img">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pBlueberry" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#9b72cf"/>
+                <stop offset="100%" stop-color="#6b3fa0"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="20" fill="#d8b4fe"/>
+            <rect x="100" y="50" width="100" height="120" rx="15" fill="rgba(255,255,255,0.5)" stroke="#c4b5fd" stroke-width="2"/>
+            <rect x="105" y="90" width="90" height="75" rx="12" fill="url(#pBlueberry)"/>
+            <!-- 藍莓粒 -->
+            <circle cx="125" cy="110" r="9" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="150" cy="125" r="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="170" cy="105" r="10" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="135" cy="145" r="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+            <circle cx="175" cy="140" r="7" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+            <!-- 高光 -->
+            <circle cx="123" cy="107" r="2" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="168" cy="102" r="2.5" fill="rgba(255,255,255,0.6)"/>
+            <circle cx="133" cy="142" r="2" fill="rgba(255,255,255,0.6)"/>
+            <!-- 優格漩渦 -->
+            <path d="M115,100 Q140,80 165,100 Q180,115 170,135" stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="180" y="40" width="8" height="80" rx="4" fill="#c4b5fd" stroke="#8b5cf6" stroke-width="1"/>
+            <text x="150" y="190" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="bold" fill="#4c1d95">🫐 藍莓優格飲</text>
+          </svg>
+        </div>
+        <h3>藍莓優格飲</h3>
+        <p>夢幻藍色，酸甜順滑超好飲</p>
+        <span class="price">HK$ 16</span>
+      </div>
+
+      <!-- 奇異果輕飲 -->
+      <div class="product-card">
+        <div class="product-img">
+          <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="pKiwi" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#86efac"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="200" rx="20" fill="#bbf7d0"/>
+            <rect x="100" y="50" width="100" height="120" rx="15" fill="rgba(255,255,255,0.5)" stroke="#86efac" stroke-width="2"/>
+            <rect x="105" y="90" width="90" height="75" rx="12" fill="url(#pKiwi)"/>
+            <!-- 奇異果切片 -->
+            <g transform="translate(130, 110) scale(0.55)">
+              <circle cx="0" cy="0" r="40" fill="#84cc16" stroke="#4d7c0f" stroke-width="3"/>
+              <circle cx="0" cy="0" r="25" fill="#a3e635"/>
+              <circle cx="0" cy="0" r="10" fill="#ecfccb"/>
+              <circle cx="-15" cy="-10" r="2" fill="#1a2e05"/>
+              <circle cx="15" cy="-10" r="2" fill="#1a2e05"/>
+              <circle cx="-10" cy="15" r="2" fill="#1a2e05"/>
+              <circle cx="10" cy="15" r="2" fill="#1a2e05"/>
+            </g>
+            <g transform="translate(170, 140) scale(0.35)">
+              <circle cx="0" cy="0" r="40" fill="#84cc16" stroke="#4d7c0f" stroke-width="3"/>
+              <circle cx="0" cy="0" r="25" fill="#a3e635"/>
+              <circle cx="0" cy="0" r="10" fill="#ecfccb"/>
+              <circle cx="-15" cy="-10" r="2" fill="#1a2e05"/>
+              <circle cx="15" cy="-10" r="2" fill="#1a2e05"/>
+            </g>
+            <rect x="115" y="95" width="20" height="20" rx="4" fill="rgba(255,255,255,0.6)" transform="rotate(12, 125, 105)"/>
+            <rect x="155" y="120" width="17" height="17" rx="4" fill="rgba(255,255,255,0.5)" transform="rotate(-8, 163, 128)"/>
+            <!-- 薄荷葉 -->
+            <ellipse cx="190" cy="85" rx="8" ry="4" fill="#22c55e" transform="rotate(-30, 190, 85)"/>
+            <ellipse cx="198" cy="92" rx="8" ry="4" fill="#16a34a" transform="rotate(20, 198, 92)"/>
+            <rect x="180" y="40" width="8" height="80" rx="4" fill="#86efac" stroke="#22c55e" stroke-width="1"/>
+            <text x="150" y="190" text-anchor="middle" font-family="Poppins, sans-serif" font-size="14" font-weight="bold" fill="#166534">🥝 奇異果輕飲</text>
+          </svg>
+        </div>
+        <h3>奇異果輕飲</h3>
+        <p>清新輕盈，解膩又健康</p>
+        <span class="price">HK$ 13</span>
+      </div>
+    </div>
+
+    <!-- 產品特色 -->
+    <section class="features">
+      <div class="feature-item">
+        <i class="fas fa-heart"></i>
+        <h4>青春配方</h4>
+        <p>天然果汁添加，不含人造色素</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-recycle"></i>
+        <h4>環保包裝</h4>
+        <p>繽紛設計，可回收材質</p>
+      </div>
+      <div class="feature-item">
+        <i class="fas fa-smile"></i>
+        <h4>活力滿分</h4>
+        <p>隨手一瓶，瞬間補充能量</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 【產品名稱】青春果漾 | 活力每一天</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

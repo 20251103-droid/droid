@@ -1,0 +1,234 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【青春果漾】| 首頁</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">青春果漾<span>🍓</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">首頁</a></li>
+        <li><a href="products.html">產品介紹</a></li>
+        <li><a href="contact.html">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主要內容：圖片輪播 + 青春主視覺 -->
+  <main>
+    <section class="hero">
+      <div class="carousel-container">
+        <div class="carousel">
+          <!-- 草莓青春飲 SVG -->
+          <div class="carousel-slide active">
+            <div class="svg-slide" style="background: linear-gradient(145deg, #ffd1dc, #ff8fa3);">
+              <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="strawberryJuice" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ff4d6d"/>
+                    <stop offset="100%" stop-color="#c9184a"/>
+                  </linearGradient>
+                  <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)"/>
+                  </linearGradient>
+                </defs>
+                <!-- 背景光暈 -->
+                <circle cx="650" cy="100" r="180" fill="rgba(255,255,255,0.2)"/>
+                <circle cx="150" cy="320" r="120" fill="rgba(255,255,255,0.15)"/>
+                <!-- 杯子 -->
+                <rect x="300" y="100" width="200" height="250" rx="30" fill="url(#glassGrad)" stroke="#ffb3c1" stroke-width="4"/>
+                <!-- 果汁 -->
+                <rect x="310" y="180" width="180" height="160" rx="25" fill="url(#strawberryJuice)"/>
+                <!-- 草莓切片 -->
+                <g transform="translate(370, 210) rotate(-15)">
+                  <path d="M0,0 Q30,-20 60,0 Q30,40 0,0 Z" fill="#ff4d6d" stroke="#c9184a" stroke-width="2"/>
+                  <circle cx="15" cy="5" r="3" fill="#ffe066"/>
+                  <circle cx="30" cy="10" r="3" fill="#ffe066"/>
+                  <circle cx="45" cy="5" r="3" fill="#ffe066"/>
+                </g>
+                <g transform="translate(450, 260) rotate(20) scale(0.8)">
+                  <path d="M0,0 Q30,-20 60,0 Q30,40 0,0 Z" fill="#ff4d6d" stroke="#c9184a" stroke-width="2"/>
+                  <circle cx="15" cy="5" r="3" fill="#ffe066"/>
+                  <circle cx="30" cy="10" r="3" fill="#ffe066"/>
+                  <circle cx="45" cy="5" r="3" fill="#ffe066"/>
+                </g>
+                <!-- 冰塊 -->
+                <rect x="340" y="195" width="40" height="40" rx="8" fill="rgba(255,255,255,0.5)" transform="rotate(15, 360, 215)"/>
+                <rect x="420" y="230" width="35" height="35" rx="8" fill="rgba(255,255,255,0.4)" transform="rotate(-10, 437, 247)"/>
+                <!-- 吸管 -->
+                <rect x="480" y="80" width="16" height="180" rx="8" fill="#ffb3c1" stroke="#ff6b9d" stroke-width="2"/>
+                <!-- 裝飾文字 -->
+                <text x="400" y="370" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="bold" fill="#c9184a">🍓 草莓青春飲</text>
+              </svg>
+            </div>
+            <div class="slide-caption">🍓 草莓青春飲 甜蜜登場</div>
+          </div>
+
+          <!-- 芒果活力飲 SVG -->
+          <div class="carousel-slide">
+            <div class="svg-slide" style="background: linear-gradient(145deg, #ffe5b4, #ffb347);">
+              <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="mangoJuice" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffb347"/>
+                    <stop offset="100%" stop-color="#ff8c00"/>
+                  </linearGradient>
+                  <linearGradient id="glassGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="680" cy="320" r="160" fill="rgba(255,255,255,0.2)"/>
+                <circle cx="120" cy="80" r="100" fill="rgba(255,255,255,0.15)"/>
+                <!-- 杯子 -->
+                <rect x="300" y="100" width="200" height="250" rx="30" fill="url(#glassGrad2)" stroke="#ffcc80" stroke-width="4"/>
+                <rect x="310" y="180" width="180" height="160" rx="25" fill="url(#mangoJuice)"/>
+                <!-- 芒果切片 -->
+                <g transform="translate(340, 200) rotate(-25)">
+                  <path d="M0,0 Q20,-30 50,-10 Q60,20 30,40 Q0,50 0,0 Z" fill="#ffb347" stroke="#e67e22" stroke-width="2"/>
+                  <path d="M5,5 Q20,-15 40,-5" stroke="#ffe066" stroke-width="2" fill="none"/>
+                </g>
+                <g transform="translate(430, 270) rotate(30) scale(0.7)">
+                  <path d="M0,0 Q20,-30 50,-10 Q60,20 30,40 Q0,50 0,0 Z" fill="#ffb347" stroke="#e67e22" stroke-width="2"/>
+                  <path d="M5,5 Q20,-15 40,-5" stroke="#ffe066" stroke-width="2" fill="none"/>
+                </g>
+                <!-- 冰塊 -->
+                <rect x="330" y="190" width="45" height="45" rx="8" fill="rgba(255,255,255,0.5)" transform="rotate(-5, 352, 212)"/>
+                <rect x="410" y="230" width="40" height="40" rx="8" fill="rgba(255,255,255,0.4)" transform="rotate(10, 430, 250)"/>
+                <!-- 吸管 -->
+                <rect x="480" y="80" width="16" height="180" rx="8" fill="#ffcc80" stroke="#e67e22" stroke-width="2"/>
+                <text x="400" y="370" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="bold" fill="#e67e22">🥭 芒果活力飲</text>
+              </svg>
+            </div>
+            <div class="slide-caption">🥭 芒果活力飲 熱情滿分</div>
+          </div>
+
+          <!-- 藍莓優格飲 SVG -->
+          <div class="carousel-slide">
+            <div class="svg-slide" style="background: linear-gradient(145deg, #d8b4fe, #a78bfa);">
+              <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="blueberryJuice" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#9b72cf"/>
+                    <stop offset="100%" stop-color="#6b3fa0"/>
+                  </linearGradient>
+                  <linearGradient id="glassGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="650" cy="100" r="150" fill="rgba(255,255,255,0.2)"/>
+                <circle cx="180" cy="330" r="130" fill="rgba(255,255,255,0.15)"/>
+                <!-- 杯子 -->
+                <rect x="300" y="100" width="200" height="250" rx="30" fill="url(#glassGrad3)" stroke="#c4b5fd" stroke-width="4"/>
+                <rect x="310" y="180" width="180" height="160" rx="25" fill="url(#blueberryJuice)"/>
+                <!-- 藍莓粒 -->
+                <circle cx="350" cy="220" r="18" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+                <circle cx="400" cy="250" r="15" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+                <circle cx="440" cy="210" r="20" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+                <circle cx="370" cy="290" r="16" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+                <circle cx="460" cy="280" r="14" fill="#4c1d95" stroke="#7c3aed" stroke-width="2"/>
+                <!-- 藍莓高光 -->
+                <circle cx="345" cy="215" r="4" fill="rgba(255,255,255,0.6)"/>
+                <circle cx="435" cy="205" r="5" fill="rgba(255,255,255,0.6)"/>
+                <circle cx="365" cy="285" r="4" fill="rgba(255,255,255,0.6)"/>
+                <!-- 優格漩渦 -->
+                <path d="M330,200 Q380,160 430,200 Q460,230 440,270" stroke="rgba(255,255,255,0.5)" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <!-- 吸管 -->
+                <rect x="480" y="80" width="16" height="180" rx="8" fill="#c4b5fd" stroke="#8b5cf6" stroke-width="2"/>
+                <text x="400" y="370" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="bold" fill="#4c1d95">🫐 藍莓優格飲</text>
+              </svg>
+            </div>
+            <div class="slide-caption">🫐 藍莓優格飲 夢幻滋味</div>
+          </div>
+
+          <!-- 奇異果輕飲 SVG -->
+          <div class="carousel-slide">
+            <div class="svg-slide" style="background: linear-gradient(145deg, #bbf7d0, #86efac);">
+              <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <linearGradient id="kiwiJuice" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#86efac"/>
+                    <stop offset="100%" stop-color="#22c55e"/>
+                  </linearGradient>
+                  <linearGradient id="glassGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.6)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0.1)"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="680" cy="320" r="150" fill="rgba(255,255,255,0.2)"/>
+                <circle cx="120" cy="80" r="110" fill="rgba(255,255,255,0.15)"/>
+                <!-- 杯子 -->
+                <rect x="300" y="100" width="200" height="250" rx="30" fill="url(#glassGrad4)" stroke="#86efac" stroke-width="4"/>
+                <rect x="310" y="180" width="180" height="160" rx="25" fill="url(#kiwiJuice)"/>
+                <!-- 奇異果切片 -->
+                <g transform="translate(360, 210)">
+                  <circle cx="0" cy="0" r="40" fill="#84cc16" stroke="#4d7c0f" stroke-width="3"/>
+                  <circle cx="0" cy="0" r="25" fill="#a3e635"/>
+                  <circle cx="0" cy="0" r="10" fill="#ecfccb"/>
+                  <!-- 籽 -->
+                  <circle cx="-15" cy="-10" r="2" fill="#1a2e05"/>
+                  <circle cx="15" cy="-10" r="2" fill="#1a2e05"/>
+                  <circle cx="-10" cy="15" r="2" fill="#1a2e05"/>
+                  <circle cx="10" cy="15" r="2" fill="#1a2e05"/>
+                  <circle cx="20" cy="5" r="2" fill="#1a2e05"/>
+                  <circle cx="-20" cy="5" r="2" fill="#1a2e05"/>
+                </g>
+                <g transform="translate(450, 270) scale(0.6)">
+                  <circle cx="0" cy="0" r="40" fill="#84cc16" stroke="#4d7c0f" stroke-width="3"/>
+                  <circle cx="0" cy="0" r="25" fill="#a3e635"/>
+                  <circle cx="0" cy="0" r="10" fill="#ecfccb"/>
+                  <circle cx="-15" cy="-10" r="2" fill="#1a2e05"/>
+                  <circle cx="15" cy="-10" r="2" fill="#1a2e05"/>
+                  <circle cx="-10" cy="15" r="2" fill="#1a2e05"/>
+                  <circle cx="10" cy="15" r="2" fill="#1a2e05"/>
+                </g>
+                <!-- 冰塊 -->
+                <rect x="335" y="195" width="42" height="42" rx="8" fill="rgba(255,255,255,0.5)" transform="rotate(12, 356, 216)"/>
+                <rect x="415" y="235" width="38" height="38" rx="8" fill="rgba(255,255,255,0.4)" transform="rotate(-8, 434, 254)"/>
+                <!-- 薄荷葉 -->
+                <ellipse cx="490" cy="170" rx="12" ry="6" fill="#22c55e" transform="rotate(-30, 490, 170)"/>
+                <ellipse cx="505" cy="180" rx="12" ry="6" fill="#16a34a" transform="rotate(20, 505, 180)"/>
+                <!-- 吸管 -->
+                <rect x="480" y="80" width="16" height="180" rx="8" fill="#86efac" stroke="#22c55e" stroke-width="2"/>
+                <text x="400" y="370" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" font-weight="bold" fill="#166534">🥝 奇異果輕飲</text>
+              </svg>
+            </div>
+            <div class="slide-caption">🥝 奇異果輕飲 清新輕盈</div>
+          </div>
+        </div>
+        <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        <div class="carousel-dots" id="dotsContainer">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 青春標語區 -->
+    <section class="tagline">
+      <h1>【產品名稱】<br><span class="highlight">青春果漾</span> 綻放你嘅色彩</h1>
+      <p>四款果漾飲品，酸甜滋味、繽紛包裝，令每日都充滿活力！</p>
+      <a href="products.html" class="cta-button">探索產品 <i class="fas fa-arrow-right"></i></a>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    <p>© 2025 【產品名稱】青春果漾 | 活力每一天</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

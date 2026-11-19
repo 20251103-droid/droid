@@ -1,0 +1,74 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【青春果漾】| 聯絡我們</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">青春果漾<span>🍓</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="products.html">產品介紹</a></li>
+        <li><a href="contact.html" class="active">聯絡我們</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="contact-main">
+    <h1 class="page-title">📬 同我哋傾吓偈</h1>
+    <p class="page-subtitle">有任何問題或者合作想法，都歡迎聯絡我哋！</p>
+
+    <div class="contact-wrapper">
+      <!-- 聯絡資訊 -->
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>香港九龍青春街88號</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>+852 1234 5678</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>hello@youthfruit.hk</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <p>星期一至五 09:00 - 18:00</p>
+        </div>
+        <div class="contact-doodle">✨ 快啲嚟搵我哋玩 ✨</div>
+      </div>
+
+      <!-- 聯絡表單 (僅示意，無實際後端) -->
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name"><i class="fas fa-user"></i> 姓名</label>
+          <input type="text" id="name" placeholder="請輸入你嘅姓名" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> 電郵地址</label>
+          <input type="email" id="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> 訊息</label>
+          <textarea id="message" rows="5" placeholder="想同我哋講咩呢？" required></textarea>
+        </div>
+        <button type="submit" class="cta-button submit-btn">送出訊息 <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 【產品名稱】青春果漾 | 活力每一天</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
